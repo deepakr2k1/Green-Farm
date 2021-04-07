@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>Green Farm</title>
+
+</head>
+
+<body>
+
+    <div class="container-6">
+        <form action="/location.html">
+            <img id="img" src="./img/clay_soil.jfif" alt="">
+            <h4 id="msg" class="letters"></h4>
+            <button type="submit" id="submit">Next</button>
+
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/text.js"></script>
+    <script>
+        function getParams() {
+            var idx = document.URL.indexOf('?');
+            var params = new Array();
+            if (idx != -1) {
+                var pairs = document.URL.substring(idx + 1, document.URL.length).split('&');
+                for (var i = 0; i < pairs.length; i++) {
+                    nameVal = pairs[i].split('=');
+                    params[nameVal[0]] = nameVal[1];
+                }
+            }
+            return params;
+        }
+        var msg = document.getElementById("msg")
+        var img = document.getElementById("img")
+        var soil_type = getParams();
+        if (soil_type.soiltype == 1) {
+            msg.innerHTML = "Our prediction is that your soil is of type Alluvial Soil";
+            img.src = "./img/alluvial.jfif";
+        } else if (soil_type.soiltype == 2) {
+            msg.innerHTML = "Our prediction is that your soil is of type Black Soil";
+            img.src = "./img/black_soil.jfif";
+        } else if (soil_type.soiltype == 3) {
+            msg.innerHTML = "Our prediction is that your soil is of type Red Soil";
+            img.src = "./img/red_soil.jfif";
+        } else {
+            msg.innerHTML = "Our prediction is that your soil is of type Clay Soil";
+            img.src = "./img/clay_soil.jfif";
+        }
+        console.log(soil_type.soiltype)
+    </script>
+</body>
+
+</html>

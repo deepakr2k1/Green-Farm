@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>Green Farm</title>
+</head>
+
+<body id="loccc">
+    <div class="container-7">
+        <div class="wrap">
+            <h3>Your Farm Location</h3>
+            <div class="map">
+                <iframe id="google_map" marginheight="0" height="400" width="400" src="https://maps.google.co.uk?output=embed">
+            </iframe>
+            </div>
+            <div class="input">
+                <input name="Get Location" type="submit" class="btn" id="get_location" value="Get My Location">
+            </div>
+            <div>
+                <input type="text" id="loc_text" placeholder="Enter your address">
+            </div>
+            <div>
+                <a href="./recommend.html"><button class="btn">Submit</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>

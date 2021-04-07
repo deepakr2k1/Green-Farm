@@ -1,0 +1,312 @@
+/* CSS Variable */
+
+:root {
+    --color1: rgba(0, 0, 0, 0.7);
+    --color2: rgb(240, 240, 240);
+    --color3: rgb(220, 220, 220);
+    --color4: rgba(0, 0, 0, 0.85);
+    --btnclr1: rgb(200, 40, 130);
+    --btnclr2: rgb(180, 10, 120);
+}
+
+
+/* Applied to all elements */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid rgb(73, 12, 12); */
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* Container-1 */
+
+.container1 {
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--color1);
+    background-blend-mode: darken;
+    height: 300px;
+    padding: 20px;
+    color: white;
+}
+
+.container1>h1 {
+    font-size: 38px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.container1>h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.button {
+    border: none;
+    height: 50px;
+    width: 300px;
+    margin: 24px;
+    margin-top: 48px;
+    padding: 6px 15px 6px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color2);
+    outline: none;
+    border-radius: 25px;
+    background-color: var(--btnclr1);
+}
+
+.button:hover {
+    background-color: var(--btnclr2);
+    cursor: pointer;
+}
+
+
+/* H2 */
+
+h2 {
+    padding: 20px;
+    margin-top: 54px;
+}
+
+
+/* Container-2 */
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.item2 {
+    margin: 4px;
+    margin-left: z0px;
+    margin-right: 20px;
+    padding: 6px;
+    display: flex;
+    width: 400px;
+    height: 120px;
+}
+
+.item2>div>img {
+    margin: 4px;
+    padding: 6px;
+}
+
+.item2>div>h4 {
+    color: var(--color4);
+    margin: 4px;
+}
+
+.item2>div>p {
+    color: var(--color4);
+    margin: 4px;
+}
+
+.container-3 {
+    background-image: url(./img/bg_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+    border: 1px solid whitesmoke;
+    display: inline-block;
+    border-radius: 8px;
+    background: whitesmoke;
+    margin: 40px;
+    padding: 30px;
+    width: min(80vw, 500px);
+}
+
+#cf {
+    color: black;
+    text-decoration: none;
+    border: 1px dashed black;
+    border-radius: 4px;
+    background: white;
+    padding: 60px;
+    margin: 20px;
+    text-align: center;
+    display: block
+}
+
+#submit {
+    border: 1px solid rgb(24, 129, 24);
+    border-radius: 4px;
+    background: rgb(24, 129, 24);
+    color: white;
+    outline: none;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#rad_btn {
+    padding: 40px;
+    display: block;
+}
+
+.container-5 {
+    height: 100vh;
+    padding: 80px;
+    background-image: url(./img/soil_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container-5>h1 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.container-5 img {
+    margin: 30px;
+    transition: 0.4s;
+}
+
+.container-5 img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.container-6 {
+    height: 80vh;
+    padding: 80px;
+    background-image: url(./img/soil_pred.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container-6 img,
+h4,
+button {
+    margin-bottom: 30px;
+}
+
+.container-6 img {
+    margin-top: 20px;
+}
+
+.container-6 h4 {
+    font-size: 20px;
+}
+
+.container-7 {
+    padding: 30px;
+    background-image: url(./img/loc.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container-7 h3 {
+    color: whitesmoke;
+}
+
+.map {
+    margin: 30px;
+}
+
+#loc_text {
+    margin: 10px;
+    width: min(80vw, 350px);
+    min-height: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid rgb(24, 129, 24);
+    border-radius: 4px;
+    background: rgb(24, 129, 24);
+    color: white;
+    outline: none;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: rgb(19, 117, 19);
+}
+
+.container-8 {
+    height: 95vh;
+    padding: 40px;
+    background-image: url(./img/recommend.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container-8 img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-8 img,
+h4,
+button {
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.container-8 img {
+    margin-top: 20px;
+}
+
+.item-c {
+    border: 1px solid rgb(24, 129, 24);
+    background: rgb(24, 129, 24);
+    color: whitesmoke;
+    padding: 4px 8px 4px 8px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#block {
+    padding: 30px 60px 30px 60px;
+    border: 1px solid whitesmoke;
+    display: inline-block;
+    border-radius: 8px;
+    background: whitesmoke;
+    margin: 40px;
+    width: min(80vw, 500px);
+}
+
+#buy {
+    text-decoration: none;
+}
+
+.container-9 {
+    height: 90vh;
+    padding: 40px;
+    background-image: url(./img/prem.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#prem_head {
+    background: rgb(156, 156, 5);
+    color: white;
+    margin: 10px;
+}
